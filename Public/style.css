@@ -1,0 +1,261 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 70px; /* Adjust based on the height of your navbar */
+    box-sizing: border-box;
+    background-color: #f0f0f0; /* Light gray background color */
+    color: #333; /* Dark text color */
+}
+
+header {
+    background-color: #333; /* Dark gray header background */
+    color: #fff; /* Light text color */
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem 0;
+}
+
+#home {
+    background: #e0e0e0; /* Lighter gray background for sections */
+    text-align: center;
+    color: #333; /* Dark text color */
+}
+
+#projects .project {
+    margin: 1rem 0;
+}
+#about {
+    background-color: #f0f0f0; /* Light gray background for about section */
+    color: #333; /* Dark text color */
+    padding: 2rem 0; /* Ensure sufficient padding for content */
+}
+
+#projects {
+    background-color: #e0e0e0; /* Lighter gray background for projects section */
+    color: #333; /* Dark text color */
+    padding: 2rem 0; /* Ensure sufficient padding for content */
+}
+
+#contact {
+    background-color: #f0f0f0; /* Light gray background for contact section */
+    color: #333; /* Dark text color */
+    padding: 2rem 0; /* Ensure sufficient padding for content */
+}
+/* Ensure the form elements are aligned correctly */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px; /* Optional: Set a max width for the form */
+    margin: 0 auto; /* Center the form horizontally */
+}
+
+form .form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem 0;
+}
+
+form .form-group label {
+    margin-bottom: 0.5rem;
+}
+
+form .form-group input,
+form .form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form .form-group textarea {
+    height: 100px; /* Set a height for the textarea */
+}
+
+form button {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    color: #fff; /* Light text color */
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+    .navbar-nav .nav-link {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.card {
+    perspective: 1000px; /* Ensure a perspective for 3D space */
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    backface-visibility: hidden;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+/* Glowing effect for navbar links */
+.navbar-nav .nav-link {
+    position: relative;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+    color: #ffcc00; /* Change this color to whatever you prefer */
+    box-shadow: 0 0 5px #ffcc00, 0 0 10px #ffcc00, 0 0 20px #ffcc00, 0 0 40px #ffcc00;
+}
+
+.navbar-nav .nav-link:before,
+.navbar-nav .nav-link:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.navbar-nav .nav-link:before {
+    transform: skewX(25deg);
+}
+
+.navbar-nav .nav-link:after {
+    transform: skewX(-25deg);
+}
+
+.navbar-nav .nav-link:hover:before,
+.navbar-nav .nav-link:hover:after {
+    width: 100%;
+    left: 0;
+}
+/* Style for the About section image */
+#about img.profile-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto;
+    filter: blur(10px); /* Initial blur */
+    transition: filter 0.3s ease; /* Smooth transition on hover */
+}
+
+#about img.profile-image:hover {
+    filter: blur(0); /* Clear image on hover */
+}
+
+@media (min-width: 768px) {
+    #about .col-md-4 {
+        display: flex;
+        align-items: center;
+    }
+}
+
+/* CSS for hover effect */
+.footer-icons a {
+    transition: color 0.3s ease; /* Smooth transition for color change */
+    color: #333; /* Dark text color */
+}
+
+.footer-icons a:hover {
+    color: #666; /* Slightly lighter text color on hover */
+}
+.marquee {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.marquee img {
+    display: inline-block;
+    padding: 0 10px; /* Adjust spacing between symbols */
+    vertical-align: middle;
+    max-height: 50px; /* Adjust size as needed */
+}
+
+/* Animation for the marquee */
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+.marquee img {
+    animation: marquee 20s linear infinite; /* Adjust speed as needed */
+}
+#skills {
+    background-color: #e0e0e0; /* Lighter gray background for skills section */
+    color: #333; /* Dark text color */
+}
