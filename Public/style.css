@@ -259,3 +259,34 @@ form button:hover {
     background-color: #e0e0e0; /* Lighter gray background for skills section */
     color: #333; /* Dark text color */
 }
+/* CSS for animations */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#home h1 span,
+#home p span {
+    display: inline-block;
+    opacity: 0;
+    animation: slideIn 0.5s forwards;
+    animation-delay: calc(var(--animation-order) * 0.1s);
+}
+
+#home h1 span:nth-child(odd) {
+    --animation-order: 1;
+}
+
+#home h1 span:nth-child(even) {
+    --animation-order: 2;
+}
+
+#home p span {
+    --animation-order: 3;
+}
