@@ -22,3 +22,18 @@ document.querySelector('#contactForm').addEventListener('submit', function(event
         alert('An error occurred. Please try again.');
     });
 });
+document.addEventListener('DOMContentLoaded', function() {
+    const sections = document.querySelectorAll('.scroll-animate');
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animated');
+            }
+        });
+    }, { threshold: 0.5 }); // Trigger animation when 50% of section is in view
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+});
