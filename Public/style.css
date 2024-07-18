@@ -4,13 +4,13 @@ body {
     padding: 0;
     padding-top: 70px; /* Adjust based on the height of your navbar */
     box-sizing: border-box;
-    background-color: #f0f0f0; /* Light gray background color */
-    color: #333; /* Dark text color */
+    background-color: #f0f0f0; 
+    color: #333; 
 }
 
 header {
-    background-color: #333; /* Dark gray header background */
-    color: #fff; /* Light text color */
+    background-color: #333; 
+    color: #fff; 
     padding: 1rem 0;
     text-align: center;
 }
@@ -36,37 +36,37 @@ section {
 }
 
 #home {
-    background: #e0e0e0; /* Lighter gray background for sections */
+    background: #e0e0e0; 
     text-align: center;
-    color: #333; /* Dark text color */
+    color: #333; 
 }
 
 #projects .project {
     margin: 1rem 0;
 }
 #about {
-    background-color: #f0f0f0; /* Light gray background for about section */
-    color: #333; /* Dark text color */
-    padding: 2rem 0; /* Ensure sufficient padding for content */
+    background-color: #f0f0f0; 
+    color: #333; 
+    padding: 2rem 0; 
 }
 
 #projects {
-    background-color: #e0e0e0; /* Lighter gray background for projects section */
-    color: #333; /* Dark text color */
-    padding: 2rem 0; /* Ensure sufficient padding for content */
+    background-color: #e0e0e0; 
+    color: #333; 
+    padding: 2rem 0; 
 }
 
 #contact {
-    background-color: #f0f0f0; /* Light gray background for contact section */
-    color: #333; /* Dark text color */
-    padding: 2rem 0; /* Ensure sufficient padding for content */
+    background-color: #f0f0f0; 
+    color: #333; 
+    padding: 2rem 0; 
 }
-/* Ensure the form elements are aligned correctly */
+
 form {
     display: flex;
     flex-direction: column;
-    max-width: 600px; /* Optional: Set a max width for the form */
-    margin: 0 auto; /* Center the form horizontally */
+    max-width: 600px;
+    margin: 0 auto; 
 }
 
 form .form-group {
@@ -88,7 +88,7 @@ form .form-group textarea {
 }
 
 form .form-group textarea {
-    height: 100px; /* Set a height for the textarea */
+    height: 100px;
 }
 
 form button {
@@ -118,7 +118,7 @@ form button:hover {
 .navbar-nav .nav-link {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    color: #fff; /* Light text color */
+    color: #fff; 
 }
 
 @media (max-width: 768px) {
@@ -132,7 +132,7 @@ form button:hover {
 }
 
 .card {
-    perspective: 1000px; /* Ensure a perspective for 3D space */
+    perspective: 1000px; 
 }
 
 .card-inner {
@@ -162,7 +162,6 @@ form button:hover {
     height: auto;
 }
 
-/* Glowing effect for navbar links */
 .navbar-nav .nav-link {
     position: relative;
     padding: 0.5rem 1rem;
@@ -174,7 +173,7 @@ form button:hover {
 
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link:focus {
-    color: #ffcc00; /* Change this color to whatever you prefer */
+    color: #ffcc00; 
     box-shadow: 0 0 5px #ffcc00, 0 0 10px #ffcc00, 0 0 20px #ffcc00, 0 0 40px #ffcc00;
 }
 
@@ -204,18 +203,17 @@ form button:hover {
     width: 100%;
     left: 0;
 }
-/* Style for the About section image */
 #about img.profile-image {
     max-width: 100%;
     height: auto;
     display: block;
     margin: 0 auto 20px auto;
-    filter: blur(10px); /* Initial blur */
-    transition: filter 0.3s ease; /* Smooth transition on hover */
+    filter: blur(10px); 
+    transition: filter 0.3s ease; 
 }
 
 #about img.profile-image:hover {
-    filter: blur(0); /* Clear image on hover */
+    filter: blur(0); 
 }
 
 @media (min-width: 768px) {
@@ -225,14 +223,13 @@ form button:hover {
     }
 }
 
-/* CSS for hover effect */
 .footer-icons a {
-    transition: color 0.3s ease; /* Smooth transition for color change */
-    color: #333; /* Dark text color */
+    transition: color 0.3s ease; 
+    color: #333; 
 }
 
 .footer-icons a:hover {
-    color: #666; /* Slightly lighter text color on hover */
+    color: #666; 
 }
 .marquee {
     white-space: nowrap;
@@ -241,25 +238,24 @@ form button:hover {
 
 .marquee img {
     display: inline-block;
-    padding: 0 10px; /* Adjust spacing between symbols */
+    padding: 0 10px; 
     vertical-align: middle;
-    max-height: 50px; /* Adjust size as needed */
+    max-height: 50px; 
 }
 
-/* Animation for the marquee */
 @keyframes marquee {
     0% { transform: translateX(100%); }
     100% { transform: translateX(-100%); }
 }
 
 .marquee img {
-    animation: marquee 20s linear infinite; /* Adjust speed as needed */
+    animation: marquee 20s linear infinite; 
 }
 #skills {
-    background-color: #e0e0e0; /* Lighter gray background for skills section */
-    color: #333; /* Dark text color */
+    background-color: #e0e0e0;
+    color: #333; 
 }
-/* CSS for animations */
+
 @keyframes slideIn {
     0% {
         opacity: 0;
